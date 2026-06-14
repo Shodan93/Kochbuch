@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" font-family="Segoe UI, Inter, sans-serif">
+  <defs>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6b75e"/>
+      <stop offset="1" stop-color="#b07d2a"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121214"/>
+      <stop offset="1" stop-color="#0b0b0d"/>
+    </linearGradient>
+    <style>
+      .h  { fill:#f3efe7; font-weight:700; }
+      .sub{ fill:#a8a39a; }
+      .mut{ fill:#6f6b63; }
+      .am { fill:#e6b75e; font-weight:700; }
+      .mono { font-family:Consolas, monospace; }
+      .card{ fill:#161619; stroke:#2a2a30; }
+    </style>
+  </defs>
+
+  <rect width="1040" height="760" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="40" y="56" class="h" font-size="30" font-family="Georgia, serif">Was wurde gebaut? — Gourmet Archive</text>
+  <text x="40" y="86" class="sub" font-size="16">Eine moderne Web-App. Ja, im Kern ist es eine Website (HTML + CSS + JavaScript) —</text>
+  <text x="40" y="108" class="sub" font-size="16">aber clever aus wiederverwendbaren Bausteinen erzeugt statt aus vielen einzelnen HTML-Dateien.</text>
+
+  <!-- STEP 1: Source code -->
+  <rect x="40" y="150" width="300" height="250" rx="14" class="card"/>
+  <circle cx="72" cy="186" r="16" fill="url(#amber)"/>
+  <text x="72" y="192" text-anchor="middle" font-size="16" fill="#1a1408" font-weight="700">1</text>
+  <text x="100" y="184" class="h" font-size="18">Quellcode</text>
+  <text x="100" y="205" class="mut" font-size="13">das, was ich geschrieben habe</text>
+
+  <text x="64" y="244" class="am mono" font-size="13">React + TypeScript</text>
+  <rect x="64" y="258" width="252" height="118" rx="8" fill="#0e0e11" stroke="#222227"/>
+  <text x="78" y="282" class="sub mono" font-size="12">RecipeCard.tsx</text>
+  <text x="78" y="304" class="sub mono" font-size="12">ShoppingList.tsx</text>
+  <text x="78" y="326" class="sub mono" font-size="12">shoppingList.ts  ← Logik</text>
+  <text x="78" y="348" class="mut mono" font-size="12">"Bausteine" (Komponenten)</text>
+  <text x="78" y="368" class="mut mono" font-size="11">+ ein Theme (Farben, Schrift)</text>
+
+  <!-- arrow -->
+  <text x="360" y="275" class="am" font-size="13" text-anchor="middle">Vite</text>
+  <text x="360" y="292" class="mut" font-size="11" text-anchor="middle">Build</text>
+  <line x1="345" y1="305" x2="395" y2="305" stroke="#e6b75e" stroke-width="2.5" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e6b75e"/></marker></defs>
+
+  <!-- STEP 2: Build output -->
+  <rect x="410" y="150" width="300" height="250" rx="14" class="card"/>
+  <circle cx="442" cy="186" r="16" fill="url(#amber)"/>
+  <text x="442" y="192" text-anchor="middle" font-size="16" fill="#1a1408" font-weight="700">2</text>
+  <text x="470" y="184" class="h" font-size="18">Fertige Website</text>
+  <text x="470" y="205" class="mut" font-size="13">automatisch erzeugte Dateien</text>
+
+  <rect x="434" y="232" width="252" height="144" rx="8" fill="#0e0e11" stroke="#222227"/>
+  <text x="448" y="258" class="sub mono" font-size="12">📄 index.html</text>
+  <text x="448" y="282" class="sub mono" font-size="12">🎨 index.css</text>
+  <text x="448" y="306" class="sub mono" font-size="12">⚙ index.js</text>
+  <text x="448" y="340" class="mut mono" font-size="11">reines HTML / CSS / JavaScript —</text>
+  <text x="448" y="357" class="mut mono" font-size="11">läuft in jedem Browser, ohne Server</text>
+
+  <!-- arrow -->
+  <text x="730" y="275" class="am" font-size="13" text-anchor="middle">Deploy</text>
+  <text x="730" y="292" class="mut" font-size="11" text-anchor="middle">Actions</text>
+  <line x1="715" y1="305" x2="765" y2="305" stroke="#e6b75e" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- STEP 3: Live -->
+  <rect x="780" y="150" width="220" height="250" rx="14" class="card"/>
+  <circle cx="812" cy="186" r="16" fill="url(#amber)"/>
+  <text x="812" y="192" text-anchor="middle" font-size="16" fill="#1a1408" font-weight="700">3</text>
+  <text x="840" y="184" class="h" font-size="18">Live</text>
+  <text x="840" y="205" class="mut" font-size="13">GitHub Pages</text>
+
+  <rect x="804" y="232" width="172" height="120" rx="10" fill="#0e0e11" stroke="#2a2a30"/>
+  <rect x="804" y="232" width="172" height="26" rx="10" fill="#1b1b1f"/>
+  <circle cx="818" cy="245" r="4" fill="#cf6b5c"/><circle cx="832" cy="245" r="4" fill="#d99a3f"/><circle cx="846" cy="245" r="4" fill="#7fb069"/>
+  <text x="890" y="296" text-anchor="middle" font-size="34">❦</text>
+  <text x="890" y="328" text-anchor="middle" class="am mono" font-size="10">shodan93.github.io</text>
+  <text x="890" y="343" text-anchor="middle" class="am mono" font-size="10">/Kochbuch/</text>
+  <text x="890" y="378" text-anchor="middle" class="mut" font-size="12">📱 💻 🖥  responsive</text>
+
+  <!-- Inside the app box -->
+  <rect x="40" y="440" width="960" height="200" rx="14" class="card"/>
+  <text x="64" y="478" class="h" font-size="18" font-family="Georgia, serif">Was steckt drin (die "Bausteine")</text>
+
+  <!-- mini blocks -->
+  <g font-size="13">
+    <rect x="64" y="500" width="170" height="56" rx="9" fill="#1b1b1f" stroke="#2a2a30"/>
+    <text x="80" y="524" class="am">Dashboard</text><text x="80" y="544" class="mut" font-size="11">Kennzahlen, Schnellaktionen</text>
+
+    <rect x="248" y="500" width="170" height="56" rx="9" fill="#1b1b1f" stroke="#2a2a30"/>
+    <text x="264" y="524" class="am">Rezepte</text><text x="264" y="544" class="mut" font-size="11">Suche, Filter, Auswahl</text>
+
+    <rect x="432" y="500" width="170" height="56" rx="9" fill="#1b1b1f" stroke="#2a2a30"/>
+    <text x="448" y="524" class="am">Wizard</text><text x="448" y="544" class="mut" font-size="11">Hinzufügen in 3 Schritten</text>
+
+    <rect x="616" y="500" width="170" height="56" rx="9" fill="#1b1b1f" stroke="#e6b75e"/>
+    <text x="632" y="524" class="am">Einkaufsliste</text><text x="632" y="544" class="mut" font-size="11">smart zusammengeführt</text>
+
+    <rect x="800" y="500" width="170" height="56" rx="9" fill="#1b1b1f" stroke="#2a2a30"/>
+    <text x="816" y="524" class="am">Plan / Settings</text><text x="816" y="544" class="mut" font-size="11">Platzhalter</text>
+  </g>
+
+  <text x="64" y="592" class="sub" font-size="13">Daten liegen aktuell nur im Speicher (Demo) — kein Login, keine Datenbank, kein echter Upload.</text>
+  <text x="64" y="614" class="sub" font-size="13">Reset bei jedem Neuladen. Genau das war als Prototyp gewünscht.</text>
+
+  <!-- footer note -->
+  <rect x="40" y="668" width="960" height="62" rx="12" fill="#15130f" stroke="#3a2f18"/>
+  <text x="64" y="700" class="am" font-size="14">Kurz gesagt:</text>
+  <text x="150" y="700" class="sub" font-size="14">Es ist eine echte Website — aber statt vieler HTML-Seiten von Hand wird sie aus</text>
+  <text x="64" y="720" class="sub" font-size="14">React-Komponenten (TypeScript) automatisch gebaut. Modern, wartbar und app-fähig (Median).</text>
+</svg>
